@@ -33,4 +33,16 @@ export default defineConfig(({ mode }) => ({
       modules: fileURLToPath(new URL("./src/modules", import.meta.url)),
     },
   },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern",
+        additionalData: `
+          @import 'assets/scss/variables';
+          @import 'assets/scss/mixins';
+        `,
+      },
+    },
+  },
 }));
