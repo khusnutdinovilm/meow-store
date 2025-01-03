@@ -115,6 +115,11 @@ export default [
               position: "after",
             },
             {
+              pattern: "common/**",
+              group: "internal",
+              position: "after",
+            },
+            {
               pattern: "ui/**",
               group: "internal",
               position: "after",

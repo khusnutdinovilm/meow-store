@@ -12,6 +12,7 @@
       "store/*": ["./src/store/*"],
       "router/*": ["./src/router/*"],
       "assets/*": ["./src/assets/*"],
+      "common/*": ["./src/components/common/*"],
       "icons/*": ["./src/components/icons/*"],
       "ui/*": ["./src/components/ui/*"],
       "shared/*": ["./src/components/shared/*"],
