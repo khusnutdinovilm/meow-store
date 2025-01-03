@@ -1,0 +1,25 @@
+.nav-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 82px;
+
+  &__item {
+    padding-bottom: 5px;
+
+    &:hover,
+    &:has(.nav-menu__link--active) {
+      border-bottom: 1px solid $color-yellow;
+      padding-bottom: 4px;
+    }
+  }
+
+  &__link {
+    @extend .text-white;
+    @include font-prop(18px, 400, 22px);
+
+    &--active {
+      color: $color-yellow;
+    }
+  }
+}

@@ -24,6 +24,7 @@ export default defineConfig(({ mode }) => ({
       store: fileURLToPath(new URL("./src/store", import.meta.url)),
       router: fileURLToPath(new URL("./src/router", import.meta.url)),
       assets: fileURLToPath(new URL("./src/assets", import.meta.url)),
+      common: fileURLToPath(new URL("./src/components/common", import.meta.url)),
       icons: fileURLToPath(new URL("./src/components/icons", import.meta.url)),
       ui: fileURLToPath(new URL("./src/components/ui", import.meta.url)),
       shared: fileURLToPath(new URL("./src/components/shared", import.meta.url)),
