@@ -5,6 +5,7 @@
         :to="{ name: link.name }"
         class="nav-menu__link"
         active-class="nav-menu__link--active"
+        exact-active-class="nav-menu__link--active"
       >
         {{ link.title }}
       </router-link>
