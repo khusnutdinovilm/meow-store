@@ -3,7 +3,7 @@ name: Lint, Test and Build
 on:
   pull_request:
     branches: ["dev"]
-  
+
   workflow_dispatch:
 
 jobs:
@@ -61,4 +61,4 @@ jobs:
         run: npm ci
 
       - name: Run tests
-        run: npm run buil
+        run: npm run build
