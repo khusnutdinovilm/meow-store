@@ -1,0 +1,80 @@
+$header-bg-color: #1f2021c9;
+
+.header {
+  &--bg {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      inset: 0;
+    }
+
+    &::after {
+      background-image: url("/assets/images/background-header.webp");
+      background-size: cover;
+      background-position: 100%;
+      z-index: -2;
+    }
+
+    &::before {
+      background-color: $header-bg-color;
+      z-index: -1;
+    }
+  }
+
+  &__wrapper {
+    height: 100%;
+    padding: 26px 0 66px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+
+  &__logo {
+    @include flex-center;
+
+    margin-right: 120px;
+    width: 78px;
+    height: 78px;
+  }
+
+  &__top {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  &__menu {
+    margin-right: auto;
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    text-align: right;
+  }
+
+  &__phone,
+  &__caption,
+  &__content {
+    @extend .text-white;
+  }
+
+  &__phone {
+    @include font-prop(24px, 700, 30px);
+  }
+
+  &__caption {
+    @include font-prop(18px, 700, 22px);
+  }
+
+  &__content {
+    @include font-prop(38px, 700, 46px);
+  }
+}

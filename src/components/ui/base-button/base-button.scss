@@ -1,0 +1,36 @@
+.base-button {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 22px 16px;
+  border-radius: 10px;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+
+  cursor: pointer;
+
+  // TODO: написать стили для следующих состояний:
+  // TODO: - focus
+  // TODO: - active
+  // TODO: - hover
+
+  &--primary {
+    background-color: #6ebbd3;
+    color: #ffffff;
+  }
+
+  &--secondary {
+    background-color: #1f2021;
+    color: #ffffff;
+  }
+
+  &--terciary {
+    border: 1px solid #cacaca;
+    color: #000000;
+  }
+}

@@ -1,0 +1,10 @@
+.page {
+  padding: 37px 0 49px;
+
+  display: flex;
+  flex-direction: column;
+
+  &__content {
+    flex: auto;
+  }
+}
