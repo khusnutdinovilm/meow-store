@@ -1,0 +1,41 @@
+.base-input {
+  // TODO: разработать стили для состояний :hover, :active, :focus
+  // TODO: так же разработать стили для типов danger (для ошибки)
+
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  padding-bottom: 17px;
+
+  &__label {
+    padding-left: 33px;
+  }
+
+  &--danger {
+    padding-bottom: 0;
+
+    & .base-input__field {
+      border: 1px solid red;
+    }
+  }
+
+  background-color: yellow;
+
+  &__field {
+    border-radius: 10px;
+    padding: 22px 33px;
+
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: #000000;
+  }
+
+  &__error-text {
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    color: #e52d2d;
+  }
+}
