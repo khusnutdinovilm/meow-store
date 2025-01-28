@@ -5,8 +5,6 @@ import { mount } from "@vue/test-utils";
 import BaseInput from "ui/base-input/base-input.vue";
 import type { IBaseInputProps } from "ui/base-input/types";
 
-// 2. Работа v-model
-
 const mountBaseInput = (customProps: IBaseInputProps = {}) => {
   return mount(BaseInput, {
     props: {
